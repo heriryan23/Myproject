@@ -1,0 +1,10 @@
+print("Program ini untuk mencari bilangan prima dalam jangkauan nilai input yang diberikan")
+n = int(input("Masukkan suatu nilai "))
+print("Bilangan prima sampai nilai", n, "adalah:")
+ 
+for x in range(2, n + 1):
+    if(x % 2 == 1 or x == 2):
+        print(x, "merupakan bilangan prima")
+ 
+if(n < 2):
+    print("Error, nilai untuk bilangan prima harus lebih besar dari 1")
