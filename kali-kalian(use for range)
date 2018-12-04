@@ -1,0 +1,13 @@
+awal=int(input('masukan nilai awal: '))
+akhir=int(input('masukan nilai akhir: '))
+
+jumlah= 0
+total= 0
+
+for i in range (awal,akhir+1) :
+     print(i, end =' ')
+     jumlah = jumlah+1
+     total = total+i
+print()
+print('bilangan diatas berjumlah: ',jumlah)
+print('total bilangan di atas berjumlah',total)
