@@ -1,0 +1,29 @@
+def cekPalindrome(kata):
+    panjang_kata = len(kata)
+    panjang_kata_array = panjang_kata - 1
+    kata_dibalik = ''
+ 
+    for p in range(panjang_kata):
+        kata_dibalik += kata[panjang_kata_array - p]
+ 
+    print('--> "{0}" kalau dibalik menjadi "{1}"'.format(kata, kata_dibalik))
+ 
+    if kata_dibalik == kata:
+        print('--> Wah, ternyata "{0}" merupakan palindrome'.format(kata))
+    else:        
+        print('--> Hmm... "{0}" bukan merupakan palindrome...'.format(kata))
+ 
+print('---------------------------------------------------')
+print('Menentukan Palindrome')
+print('---------------------------------------------------')
+input_kata = input('Masukan sebuah kata: ')
+ 
+while True:    
+    if input_kata is '':
+        print('Exit...')
+        break
+    else:
+        cekPalindrome(input_kata.lower())
+        input_kata = ''
+        input_kata = input('\nCoba lagi kata baru (langsung ENTER untuk exit): ')
+ 
